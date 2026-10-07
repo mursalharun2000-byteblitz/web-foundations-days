@@ -1,0 +1,82 @@
+/* Define CSS variables for Light Theme */
+:root {
+    --bg-color: #f4f4f9;
+    --text-color: #333333;
+    --container-bg: #ffffff;
+    --border-color: #cccccc;
+    --btn-bg: #3498db;
+    --btn-text: #ffffff;
+}
+
+/* Redefine CSS variables for Dark Theme */
+body.dark {
+    --bg-color: #1a1a1a;
+    --text-color: #f4f4f9;
+    --container-bg: #2d2d2d;
+    --border-color: #555555;
+    --btn-bg: #2980b9;
+}
+
+/* Apply variables to base elements */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: var(--container-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* Character Counter Logic Classes */
+.warning {
+    color: orange;
+}
+
+.over {
+    color: red;
+    font-weight: bold;
+}
