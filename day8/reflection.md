@@ -1,0 +1,7 @@
+# Course Reflection
+
+The most difficult concept for me in this course was definitely mastering Git version control, specifically understanding the disconnect between my local working directory in VS Code and the snapshots Git was taking. For a while, I struggled with empty commits appearing on GitHub because I was running terminal commands before officially saving my files (`Ctrl + S`) in the code editor. I overcame this by slowing down my workflow, visually checking the file tabs for the unsaved "white dot," and using `git status` frequently to verify exactly what changes Git was seeing before I ran `git commit`. 
+
+Looking critically at my own design for QuickNotes, the main area I would improve is the data fetching efficiency. Currently, the API prototype loads notes all at once. As the system scales to 1 million users, I need to implement pagination or an infinite scroll feature so the system doesn't freeze when loading an account with thousands of records. 
+
+Next, I plan to dive deep into a Software Development specialization. While designing the web architecture for this capstone was insightful, I want to step beyond the browser. My goal is to master core object-oriented programming, build heavy-duty enterprise applications, and engineer robust software ecosystems that give me the versatility to work locally, internationally, or entirely remotely.
